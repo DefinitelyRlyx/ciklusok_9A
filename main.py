@@ -17,3 +17,4 @@ if __name__ == '__main__':
 
     atlag = sum / darabszam
     print('átlag: ' + str(atlag))
+###fdsfsdfd
