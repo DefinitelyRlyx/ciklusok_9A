@@ -1,10 +1,6 @@
 import pandas as pd
 
 
-def print(param):
-    pass
-
-
 if __name__ == '__main__':
     diamonds = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv')
     ##print(diamonds)
@@ -22,3 +18,11 @@ if __name__ == '__main__':
 
     atlag = sum / darabszam
     print('átlag: ' + str(atlag))
+
+    for gyemant in diamonds.iterrows():
+        carat = gyemant[1]['carat']
+        if carat > atlag:
+            print(gyemant)
+
+
+###Latest version
