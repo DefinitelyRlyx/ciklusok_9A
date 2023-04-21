@@ -10,7 +10,7 @@ if __name__ == '__main__':
     sum = 0
     for i in diamonds['carat']:
         sum += i
-    print('karát összesen: ' + str(sum))
+    print('szín összesen: ' + str(sum))
 
     darabszam = diamonds['carat'].count()
     print('darabszám: '+ str(darabszam))
@@ -20,8 +20,8 @@ if __name__ == '__main__':
     print('átlag: ' + str(atlag))
 
     for gyemant in diamonds.iterrows():
-        carat = gyemant[1]['carat']
-        if carat > atlag:
+        color = gyemant[1]['color']
+        if color == 'H':
             print(gyemant)
 
 
